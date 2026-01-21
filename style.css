@@ -1,0 +1,137 @@
+/* ---------------- Reset and body ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ---------------- Card ---------------- */
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(135deg, #07c4ee, #7b6cdd);
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* ---------------- Search box ---------------- */
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 6px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ---------------- FIXED SEARCH ICON SIZE ---------------- */
+.search button img {
+  width: 14px;   /* smaller icon width */
+  height: 14px;  /* smaller icon height */
+  object-fit: contain;
+}
+
+/* ---------------- Weather section ---------------- */
+.weather-icon {
+  width: 120px;
+  margin: 20px 0;
+}
+
+.weather h1 {
+  font-size: 50px;
+}
+
+.weather h2 {
+  font-size: 28px;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.humidity,
+.wind {
+  font-size: 20px;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+@media (max-width: 480px) {
+  .weather h1 {
+    font-size: 40px;
+  }
+
+  .weather h2 {
+    font-size: 22px;
+  }
+
+  .weather-icon {
+    width: 100px;
+  }
+
+  .col img {
+    width: 25px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 18px;
+  }
+
+  .search input {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .search button {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  /* Smaller icon on mobile */
+  .search button img {
+    width: 12px;
+    height: 12px;
+  }
+}
