@@ -32,5 +32,3 @@ A **fully responsive weather application** built with **HTML, CSS, and JavaScrip
 
 ---
 
-## **Project Structure**
-
