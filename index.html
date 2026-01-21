@@ -2,50 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 
-<div class="card">
-  <div class="search">
-    <input 
-      type="text" 
-      id="city"
-      placeholder="Enter city name"
-      spellcheck="false"
-    >
-    <button onclick="getWeather()">
-      <img src="images/search.png">
-    </button>
+  <div class="search-box">
+    <h1>Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="goToWeather()">Search</button>
   </div>
 
-  <div class="weather">
-    <img src="images/rain.png" class="weather-icon">
-    <h1 class="temp">22°c</h1>
-    <h2 class="city">Vizinagaram</h2>
-
-    <div class="details">
-      <div class="col">
-        <img src="images/humidity.png">
-        <div>
-          <p class="humidity">50%</p>
-          <p>Humidity</p>
-        </div>
-      </div>
-
-      <div class="col">
-        <img src="images/wind.png">
-        <div>
-          <p class="wind">15 km/h</p>
-          <p>Wind speed</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
 
