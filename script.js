@@ -80,3 +80,4 @@ searchBtn.addEventListener("click", getWeather);
 searchBox.addEventListener("keydown", (e) => {
   if (e.key === "Enter") getWeather();
 });
+
