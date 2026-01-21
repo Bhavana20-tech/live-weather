@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="weatherBody">
+
+  <!-- Loader -->
+  <div id="loader">⏳ Loading weather data...</div>
+
+  <!-- Main weather box -->
+  <div id="weatherBox">
+    <div class="weather-main">
+      <h2 id="cityName"></h2>
+      <h3 id="countryName"></h3>
+      <div id="weatherIcon" class="weather-icon"></div>
+      <p id="temperature"></p>
+      <p id="condition"></p>
+    </div>
+
+    <div class="weather-details">
+      <p>☁ Clouds: <span id="clouds"></span></p>
+      <p>💧 Humidity: <span id="humidity"></span></p>
+      <p>🌬 Wind: <span id="wind"></span></p>
+      <p>📊 Pressure: <span id="pressure"></span></p>
+      <p>👁 Visibility: <span id="visibility"></span></p>
+    </div>
+
+    <h3>Hourly Forecast</h3>
+    <div id="hourly" class="forecast-row"></div>
+
+    <h3>Weekly Forecast</h3>
+    <div id="weekly" class="forecast-row"></div>
+
+    <a href="index.html" class="search-again">🔍 Search another city</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
