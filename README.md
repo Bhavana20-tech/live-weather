@@ -1,34 +1,87 @@
-# Responsive Weather App 🌤️
 
-A **fully responsive weather application** built with **HTML, CSS, and JavaScript**, which allows users to check the **current weather** of any city worldwide. The app fetches **real-time weather data** from the **OpenWeatherMap API**, including **temperature, humidity, wind speed**, and **weather conditions** like sunny, cloudy, or rainy.  
 
----
+# Live Weather App 🌦️
 
-## **Features**
+I created this Live Weather App using **HTML, CSS, and JavaScript**.  
+This project fetches real-time weather data from the **OpenWeatherMap API** and displays current weather and forecast details in a clean and responsive UI.
 
-- 🔍 **Search Functionality:** Type any city to get live weather updates.  
-- ☁️ **Dynamic Weather Icons:** Displays icons based on current weather (Clear, Clouds, Rain, etc.).  
-- 📱 **Responsive Design:** Works perfectly on desktop and mobile devices.  
-- 🎨 **Clean UI/UX:** Gradient background and visually appealing weather card.  
-- 🌐 **API Integration:** Uses OpenWeatherMap API for real-time weather data.  
+## 🌐 Live Project Link
+👉 **https://bhavana20-tech.github.io/live-weather/**
 
 ---
 
-## **Technologies Used**
-
-- **HTML5** – Structure of the app  
-- **CSS3** – Styling and responsive design  
-- **JavaScript (ES6)** – API calls, DOM manipulation, and interactivity  
-- **OpenWeatherMap API** – Live weather data  
+## About the Project
+This project allows users to search for any city and view its current weather conditions along with hourly and weekly forecasts.  
+I also implemented proper error handling so that if a city is not found or data fails to load, the user gets a clear message instead of a blank screen.
 
 ---
 
-## **How to Use**
-
-1. Open the app in your browser.  
-2. Enter a city name in the search box.  
-3. Click the **search button** or press **Enter**.  
-4. See the current **temperature, humidity, wind speed**, and **weather condition**.
+## Features
+- Search weather by city name
+- Displays city and country
+- Shows temperature in Celsius
+- Weather condition (Clear, Cloudy, Rain, Snow, etc.)
+- Weather details:
+  - Clouds
+  - Humidity
+  - Wind speed
+  - Pressure
+  - Visibility
+- Hourly forecast
+- Weekly forecast
+- Dynamic background colors based on weather condition
+- Error message for invalid city names
+- Fully responsive for mobile and desktop
+- Cover page background image
 
 ---
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- OpenWeatherMap API
+
+---
+
+## Project Structure
+
+live-weather/
+│── index.html
+│── weather.html
+│── style.css
+│── script.js
+└── images/
+
+
+---
+
+## How the App Works
+1. I enter a city name on the home page.
+2. The app redirects to the weather result page.
+3. Weather data is fetched from the OpenWeatherMap API.
+4. Current weather and forecast details are displayed.
+5. If the city name is incorrect, an error message is shown with an option to search again.
+
+---
+
+## API Used
+I used the OpenWeatherMap API:
+- Current Weather API
+- 5 Day / 3 Hour Forecast API
+
+API website: https://openweathermap.org/api
+
+---
+
+## How to Run the Project Locally
+1. Download or clone this repository
+2. Open the project folder
+3. Open `index.html` in your browser
+
+---
+
+## Author
+**Bhavana**
+
 
