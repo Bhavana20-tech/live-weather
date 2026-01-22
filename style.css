@@ -11,42 +11,63 @@ body.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #0988dc, #42c7d0);
+  background: linear-gradient(135deg,#4385d6e1,rgba(182, 196, 168, 0.933));
+}
+/* Cover Page Background Image */
+body.home {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("images/snowy.jpeg"); /* your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Search box design */
 .search-box {
-  width: 90%;
-  max-width: 350px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 30px 25px;
+  border-radius: 15px;
   text-align: center;
-  padding: 20px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 380px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 .search-box h1 {
-  color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 28px;
 }
 
 .search-box input {
   width: 100%;
   padding: 12px;
-  border-radius: 10px;
   border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
   font-size: 16px;
-  margin-bottom: 10px;
 }
 
 .search-box button {
   width: 100%;
   padding: 12px;
-  border-radius: 10px;
   border: none;
+  border-radius: 10px;
+  background: #4695ef9f;
+  color: white;
   font-size: 16px;
   cursor: pointer;
-  background: #ff9800;
-  color: #000;
+  font-weight: bold;
+}
+
+.search-box button:hover {
+  background: #56b7eb;
 }
 
 /* ====== WEATHER PAGE ====== */
@@ -141,5 +162,4 @@ body.home {
   .weather-details p { font-size: 14px; flex: 1 1 100%; }
   .hour, .day { min-width: 60px; padding: 8px; font-size: 14px; }
 }
-
 
